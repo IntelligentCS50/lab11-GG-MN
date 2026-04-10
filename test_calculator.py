@@ -8,14 +8,14 @@ from calculator import *
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
     def test_add(self): # 3 assertions
-        assert add(2,3)==5
-        assert add(-9,9)==0
-        assert add(0,0)==0
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-9, 9), 0)
+        self.assertEqual(add(0, 0), 0)
 
     def test_subtract(self): # 3 assertions
-        assert sub(5,3)==2
-        assert sub(3,5)==-2
-        assert sub(0,0)==0
+        self.assertEqual(subtract(5, 3), 2)
+        self.assertEqual(subtract(3, 5), -2)
+        self.assertEqual(subtract(0, 0), 0)
     # ##########################
 
     ######## Partner 1
@@ -33,16 +33,16 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
         with self.assertRaises(ZeroDivisionError):
-            div(0,5)
+            divide(0, 5)
 
     def test_logarithm(self): # 3 assertions
-        assert log(2,8)==3
-        assert log(10, 100)==2
-        assert log(3, 9)==2
+        self.assertEqual(logarithm(2, 8), 3)
+        self.assertEqual(logarithm(10, 100), 2)
+        self.assertEqual(logarithm(3, 9), 2)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            div(10, 0)
+            logarithm(1, 10)
     # ##########################
     
     ######## Partner 1
