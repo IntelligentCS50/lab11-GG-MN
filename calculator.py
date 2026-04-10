@@ -40,3 +40,12 @@ def logarithm(a, b):
 
 def exponent(a, b):
     return a ** b
+
+def mul(a, b):
+    return multiply(a, b)
+
+def div(a, b):
+    return divide(a, b)
+
+def exp(a, b):
+    return exponent(a, b)
