@@ -11,6 +11,9 @@ One function per operation, in order.
 # First example
 import math
 
+from pip._internal.vcs import git
+
+
 def square_root(a):
     if a < 0:
         raise ValueError("Cannot take square root of negative number")
@@ -40,3 +43,31 @@ def logarithm(a, b):
 
 def exponent(a, b):
     return a ** b
+
+# Functions made by Monae:
+
+import math
+
+def add(a,b):
+    return a+b
+
+def sub(a,b):
+    return a-b
+
+def mul(a,b):
+    return a*b
+
+def div(a,b):
+    if a==o:
+        raise ZeroDivisionError("Cannot divide by zero")
+    return a/b
+
+def log(a,b):
+    if a<=0 and a==1:
+        raise ValueError("Log base must be positive but cannot equal 1.")
+    if b<=0:
+        raise ValueError("Log argument must be positive.")
+    return math.log(b,a)
+
+def exp(a,b):
+    return a**b
